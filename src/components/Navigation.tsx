@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import DiLogo from '@/assets/DiLogo.svg';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -34,11 +33,7 @@ const Navigation = () => {
           scrolled ? 'bg-background/95 backdrop-blur-sm shadow-soft' : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="relative z-50">
-            <img src={DiLogo} alt="Designtentions" className="h-10 w-auto" />
-          </Link>
-
+        <div className="container mx-auto px-6 py-4 flex items-center justify-end">
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (

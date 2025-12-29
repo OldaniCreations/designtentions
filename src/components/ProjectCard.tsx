@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export interface Project {
   id: string;
   title: string;
-  category: 'ai-ethics' | 'climate-tech' | 'system-design';
+  category: 'ai-ethics' | 'climate-tech' | 'system-design' | 'experiments';
   tag: string;
   description: string;
   image: string;
@@ -18,6 +18,7 @@ const categoryColors = {
   'ai-ethics': 'bg-midnight text-primary-foreground',
   'climate-tech': 'bg-sage text-primary-foreground',
   'system-design': 'bg-terracotta text-primary-foreground',
+  'experiments': 'bg-foreground/80 text-background',
 };
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {

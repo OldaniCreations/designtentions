@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProjectCard, { Project } from '@/components/ProjectCard';
 
-type Category = 'all' | 'ai-ethics' | 'climate-tech' | 'system-design';
+type Category = 'all' | 'ai-ethics' | 'climate-tech' | 'system-design' | 'experiments';
 
 const allProjects: Project[] = [
   {
@@ -62,6 +62,7 @@ const filters: { label: string; value: Category }[] = [
   { label: 'AI Ethics', value: 'ai-ethics' },
   { label: 'Climate Tech', value: 'climate-tech' },
   { label: 'System Design', value: 'system-design' },
+  { label: 'Experiments', value: 'experiments' },
 ];
 
 const Projects = () => {
