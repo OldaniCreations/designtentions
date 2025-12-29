@@ -55,6 +55,14 @@ const allProjects: Project[] = [
     description: 'Visual frameworks for understanding and optimizing material flows in circular systems.',
     image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&auto=format&fit=crop&q=80',
   },
+  {
+    id: 'property-compass',
+    title: 'Property Compass',
+    category: 'experiments',
+    tag: 'Automation',
+    description: 'A custom property assessment engine that automates Central Oregon real estate due diligence using RAG-powered intelligence.',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80',
+  },
 ];
 
 const filters: { label: string; value: Category }[] = [
