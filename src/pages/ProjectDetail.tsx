@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -12,6 +12,7 @@ interface ProjectDetail {
   challenge: string;
   solution: string;
   impact: string;
+  externalLink?: string;
 }
 
 const projectsData: Record<string, ProjectDetail> = {
@@ -75,6 +76,21 @@ const projectsData: Record<string, ProjectDetail> = {
     solution: 'Our visual mapping framework provides clear representations of material and energy flows, identifying intervention points for circularity and enabling strategic decision-making for resource optimization.',
     impact: 'Partner organizations have identified average material cost savings of 30% while reducing waste streams by over 50%.',
   },
+  'property-compass': {
+    id: 'property-compass',
+    title: 'Property Compass',
+    category: 'Experiments',
+    tag: 'Automation',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&auto=format&fit=crop&q=80',
+    challenge: `Finding the perfect acreage in Central Oregon isn't just about the view; it's a complex navigation of Deschutes County's dense regulatory landscape. My wife and I found ourselves in a loop: find a promising Zillow listing, then manually cross-reference it against zoning codes, ADU allowances, HOA restrictions, Fire Fuel zones, and wildlife overlays.
+
+Even using AI to assist individual searches, the process was fragmented and time-consuming. My father—a veteran of the old way of doing things—was amazed that I could find in minutes what used to take weeks, but I knew that even minutes were too long for a repeatable, high-stakes decision-making process.`,
+    solution: `I moved from "manual searching" to "automated intelligence" by building a custom property assessment engine. The system allows for a single address input, triggers a multi-source data harvest, and then processes that data against a RAG (Retrieval-Augmented Generation) database containing the specific legal and environmental restrictions of the region.
+
+The tool doesn't just "find data"; it assesses it. It interprets the nuances of zoning and acreage to provide a definitive report on whether a property can actually support our specific needs (like ADU feasibility or wildlife compliance). It transforms a chaotic search into a structured, archivable library of property intelligence.`,
+    impact: `By automating the "due diligence" phase, we have reduced the risk of human error in one of life's largest investments. The tool acts as a digital safeguard—if it doesn't lead us to the perfect property, it performs the even more critical task of protecting us from the wrong one. This project stands as a proof-of-concept for how Designtentions approaches any problem: by building a system that replaces noise with clarity.`,
+    externalLink: 'https://propertycompass.lovable.app/',
+  },
 };
 
 const ProjectDetail = () => {
@@ -117,9 +133,22 @@ const ProjectDetail = () => {
           </span>
           
           {/* Title */}
-          <h1 className="font-display text-4xl md:text-5xl text-foreground mb-8 max-w-3xl">
+          <h1 className="font-display text-4xl md:text-5xl text-foreground mb-4 max-w-3xl">
             {project.title}
           </h1>
+          
+          {/* External Link */}
+          {project.externalLink && (
+            <a
+              href={project.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-display text-sm text-terracotta hover:text-terracotta-light transition-colors group"
+            >
+              View Live Project
+              <ExternalLink size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+          )}
         </div>
       </section>
       
@@ -145,9 +174,11 @@ const ProjectDetail = () => {
               <h2 className="font-display text-sm tracking-wide text-terracotta mb-4">
                 The Challenge
               </h2>
-              <p className="font-body text-muted-foreground leading-relaxed">
-                {project.challenge}
-              </p>
+              <div className="font-body text-muted-foreground leading-relaxed space-y-4">
+                {project.challenge.split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
             </div>
             
             {/* The Solution */}
@@ -155,9 +186,11 @@ const ProjectDetail = () => {
               <h2 className="font-display text-sm tracking-wide text-terracotta mb-4">
                 The Intentional Solution
               </h2>
-              <p className="font-body text-muted-foreground leading-relaxed">
-                {project.solution}
-              </p>
+              <div className="font-body text-muted-foreground leading-relaxed space-y-4">
+                {project.solution.split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
             </div>
             
             {/* The Impact */}
@@ -165,9 +198,11 @@ const ProjectDetail = () => {
               <h2 className="font-display text-sm tracking-wide text-terracotta mb-4">
                 The Impact
               </h2>
-              <p className="font-body text-muted-foreground leading-relaxed">
-                {project.impact}
-              </p>
+              <div className="font-body text-muted-foreground leading-relaxed space-y-4">
+                {project.impact.split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
