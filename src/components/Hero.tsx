@@ -15,7 +15,7 @@ const Hero = () => {
           <img 
             src={DiLogo} 
             alt="Designtentions" 
-            className="h-24 md:h-32 w-auto mx-auto"
+            className="h-40 md:h-56 lg:h-64 w-auto mx-auto"
           />
         </div>
         
