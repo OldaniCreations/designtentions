@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProjectCard, { Project } from '@/components/ProjectCard';
+import propertyCompassImage from '@/assets/property-compass-hero.jpg';
 
 type Category = 'all' | 'ai-ethics' | 'climate-tech' | 'system-design' | 'experiments';
 
@@ -61,7 +62,7 @@ const allProjects: Project[] = [
     category: 'experiments',
     tag: 'Automation',
     description: 'A custom property assessment engine that automates Central Oregon real estate due diligence using RAG-powered intelligence.',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80',
+    image: propertyCompassImage,
   },
 ];
 

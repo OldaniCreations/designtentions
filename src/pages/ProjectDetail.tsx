@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import propertyCompassImage from '@/assets/property-compass-hero.jpg';
 
 interface ProjectDetail {
   id: string;
@@ -81,7 +82,7 @@ const projectsData: Record<string, ProjectDetail> = {
     title: 'Property Compass',
     category: 'Experiments',
     tag: 'Automation',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&auto=format&fit=crop&q=80',
+    image: propertyCompassImage,
     challenge: `Finding the perfect acreage in Central Oregon isn't just about the view; it's a complex navigation of Deschutes County's dense regulatory landscape. My wife and I found ourselves in a loop: find a promising Zillow listing, then manually cross-reference it against zoning codes, ADU allowances, HOA restrictions, Fire Fuel zones, and wildlife overlays.
 
 Even using AI to assist individual searches, the process was fragmented and time-consuming. My father—a veteran of the old way of doing things—was amazed that I could find in minutes what used to take weeks, but I knew that even minutes were too long for a repeatable, high-stakes decision-making process.`,
