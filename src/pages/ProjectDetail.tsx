@@ -144,7 +144,7 @@ const ProjectDetail = () => {
               href={project.externalLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-display text-sm text-terracotta hover:text-terracotta-light transition-colors group"
+              className="inline-flex items-center gap-2 mt-6 px-6 py-3 font-display text-sm tracking-wide bg-terracotta text-primary-foreground hover:bg-terracotta-light transition-all duration-300 group"
             >
               View Live Project
               <ExternalLink size={14} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
