@@ -4,8 +4,10 @@ import Footer from '@/components/Footer';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
+      
+      <main className="flex-1">
       
       {/* Hero */}
       <section className="pt-32 pb-16 grain-overlay">
@@ -54,6 +56,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      </main>
       
       <Footer />
     </div>
