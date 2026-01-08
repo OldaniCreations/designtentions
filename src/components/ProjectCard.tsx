@@ -37,7 +37,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </h3>
           
           {/* Description */}
-          <p className="font-body text-sm text-muted-foreground line-clamp-2 mb-4">
+          <p className="font-body text-sm text-muted-foreground mb-4">
             {project.description}
           </p>
           
