@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send } from 'lucide-react';
+import { Send, Linkedin, Calendar } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -160,17 +160,39 @@ const Contact = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-xl">
             <h3 className="font-display text-xl text-foreground mb-4">
-              Prefer email?
+              Other ways to connect
             </h3>
-            <p className="font-body text-muted-foreground mb-4">
-              Reach out directly at{' '}
-              <a 
-                href="mailto:hello@designtentions.com" 
-                className="text-terracotta hover:text-terracotta-light transition-colors"
-              >
-                hello@designtentions.com
-              </a>
-            </p>
+            <div className="space-y-4">
+              <p className="font-body text-muted-foreground">
+                Reach out directly at{' '}
+                <a 
+                  href="mailto:hello@designtentions.com" 
+                  className="text-terracotta hover:text-terracotta-light transition-colors"
+                >
+                  hello@designtentions.com
+                </a>
+              </p>
+              <div className="flex gap-4">
+                <a 
+                  href="https://www.linkedin.com/in/tristinoldani/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 font-display text-sm text-foreground border border-border hover:border-terracotta hover:text-terracotta transition-colors"
+                >
+                  <Linkedin size={18} />
+                  LinkedIn
+                </a>
+                <a 
+                  href="https://calendly.com/tristinoldani/30min" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 font-display text-sm text-foreground border border-border hover:border-terracotta hover:text-terracotta transition-colors"
+                >
+                  <Calendar size={18} />
+                  Schedule a Chat
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
