@@ -1,38 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import ProjectCard, { Project } from './ProjectCard';
-import propertyCompassImage from '@/assets/property-compass-hero.jpg';
-import rosterbossImage from '@/assets/rosterboss-hero.jpg';
-
-const featuredProjects: Project[] = [
-  {
-    id: 'forkast',
-    title: 'Forkast',
-    category: 'experiments',
-    tag: 'Meal Planning Gone Wild',
-    description: 'What started as a dream to price-compare groceries across multiple stores turned into a lesson in web scraping walls.',
-    image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&auto=format&fit=crop&q=80',
-    tools: ['Lovable', 'Cursor', 'Figma Make', 'Spoonacular API'],
-  },
-  {
-    id: 'rosterboss',
-    title: 'RosterBoss',
-    category: 'experiments',
-    tag: 'Fantasy Football Sanity',
-    description: 'Born from the chaos of managing three fantasy rosters at once. Sometimes the AI gets confused about positions too.',
-    image: rosterbossImage,
-    tools: ['Cursor', 'Figma Make', 'MindStudio', 'ESPN API'],
-  },
-  {
-    id: 'property-compass',
-    title: 'Property Compass',
-    category: 'experiments',
-    tag: 'Real Estate Automation',
-    description: 'A custom property assessment engine that automates Central Oregon real estate due diligence using RAG-powered intelligence.',
-    image: propertyCompassImage,
-    tools: ['Lovable', 'RAG', 'Deschutes County Data'],
-  },
-];
+import ProjectCard from './ProjectCard';
+import { projects } from '@/data/projects';
 
 const ProjectsPreview = () => {
   return (
@@ -62,7 +31,7 @@ const ProjectsPreview = () => {
         
         {/* Project Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
