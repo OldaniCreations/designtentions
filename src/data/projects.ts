@@ -92,7 +92,7 @@ Eventually I got it working, flaws and all. But I've since disconnected the AI a
     lessons: `The tool works for its core purpose: seeing all my rosters at once. The AI insights were a fun experiment but not worth the subscription cost for the quality of output.
 
 Next year? Import this project into Lovable and consolidate everything. Right now it's scattered across Figma Make, Cursor, GitHub, and Vercel. I'd love to just use Lovable and its connectors to simplify the whole stack. Also by next year, who knows what will be possible.`,
-    externalLink: "https://rosterboss.vercel.app/",
+    externalLink: "https://roster-boss-brown.vercel.app/",
   },
   "property-compass": {
     ...projects.find((p) => p.id === "property-compass")!,
