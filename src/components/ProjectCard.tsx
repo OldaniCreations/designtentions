@@ -11,10 +11,10 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
   return (
     <Link
       to={`/projects/${project.id}`}
-      className="group block opacity-0 animate-fade-up"
+      className="group block opacity-0 animate-fade-up h-full"
       style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
     >
-      <article className="bg-card overflow-hidden shadow-soft hover:shadow-card transition-all duration-500">
+      <article className="bg-card overflow-hidden shadow-soft hover:shadow-card transition-all duration-500 h-full flex flex-col">
         {/* Image */}
         <div className="aspect-[4/3] overflow-hidden bg-bone">
           <img
@@ -25,7 +25,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </div>
         
         {/* Content */}
-        <div className="p-6">
+        <div className="p-6 flex flex-col flex-1">
           {/* Tag */}
           <span className="inline-block px-3 py-1 text-xs font-display tracking-wide mb-4 bg-foreground/80 text-background">
             {project.tag}
@@ -42,7 +42,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </p>
           
           {/* Tools Used */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-auto">
             {project.tools.map((tool) => (
               <span 
                 key={tool}
