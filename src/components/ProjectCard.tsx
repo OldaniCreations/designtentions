@@ -3,23 +3,17 @@ import { Link } from 'react-router-dom';
 export interface Project {
   id: string;
   title: string;
-  category: 'ai-ethics' | 'climate-tech' | 'system-design' | 'experiments';
+  category: 'experiments';
   tag: string;
   description: string;
   image: string;
+  tools: string[];
 }
 
 interface ProjectCardProps {
   project: Project;
   index: number;
 }
-
-const categoryColors = {
-  'ai-ethics': 'bg-midnight text-primary-foreground',
-  'climate-tech': 'bg-sage text-primary-foreground',
-  'system-design': 'bg-terracotta text-primary-foreground',
-  'experiments': 'bg-foreground/80 text-background',
-};
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
   return (
@@ -41,7 +35,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         {/* Content */}
         <div className="p-6">
           {/* Tag */}
-          <span className={`inline-block px-3 py-1 text-xs font-display tracking-wide mb-4 ${categoryColors[project.category]}`}>
+          <span className="inline-block px-3 py-1 text-xs font-display tracking-wide mb-4 bg-foreground/80 text-background">
             {project.tag}
           </span>
           
@@ -51,9 +45,21 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           </h3>
           
           {/* Description */}
-          <p className="font-body text-sm text-muted-foreground line-clamp-2">
+          <p className="font-body text-sm text-muted-foreground line-clamp-2 mb-4">
             {project.description}
           </p>
+          
+          {/* Tools Used */}
+          <div className="flex flex-wrap gap-2">
+            {project.tools.map((tool) => (
+              <span 
+                key={tool}
+                className="text-xs font-display tracking-wide text-sage border border-sage/30 px-2 py-0.5"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
         </div>
       </article>
     </Link>
