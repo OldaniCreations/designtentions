@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           {/* Logo & Tagline */}
           <div>
-            <img src={DiLogo} alt="Designtentions" className="h-12 w-auto mb-4 brightness-0 invert opacity-80" />
+            <img src={DiLogo} alt="Designtentions" className="h-20 w-auto mb-4 brightness-0 invert opacity-80" />
             <p className="font-body text-sm text-primary-foreground/60 max-w-xs">
               Intentional systems for a better future.
             </p>
