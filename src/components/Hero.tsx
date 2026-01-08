@@ -26,7 +26,7 @@ const Hero = () => {
         
         {/* Tagline */}
         <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-12 opacity-0 animate-fade-up stagger-3">
-          At the intersection of AI Ethics and Climate Tech, we design frameworks that matter.
+          A designer's playground for building tools with purpose. One experiment at a time.
         </p>
         
         {/* CTA */}
@@ -35,7 +35,7 @@ const Hero = () => {
             href="#about" 
             className="inline-flex items-center justify-center px-8 py-3 font-display text-sm tracking-wide bg-terracotta text-primary-foreground hover:bg-terracotta-light transition-colors duration-300"
           >
-            Learn More
+            Meet the Maker
           </a>
           <a 
             href="/projects" 

@@ -37,29 +37,32 @@ const About = () => {
           {/* Section Label */}
           <div className="reveal">
             <span className="font-display text-xs tracking-[0.3em] uppercase text-sage mb-8 block">
-              Our Philosophy
+              The Story
             </span>
           </div>
           
           {/* Main Content */}
           <div className="reveal">
             <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-8 text-balance">
-              We believe that every system—whether technological, ecological, or social—carries an intention.
+              I'm a designer who can't stop tinkering.
             </h2>
           </div>
           
           <div className="reveal">
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-              At Designtentions, we work at the critical intersection of artificial intelligence and climate technology. 
-              Our approach is rooted in intentionality: understanding that the choices we make in system design 
-              ripple outward, shaping communities, ecosystems, and futures.
+              When I see a problem, I don't just sketch solutions—I build them. Armed with curiosity and an ever-growing toolkit of AI-powered platforms, I turn frustrations into functional experiments.
+            </p>
+          </div>
+          
+          <div className="reveal">
+            <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
+              This site is my lab. A collection of experiments born from real needs—meal planning chaos, fantasy football frustrations, real estate rabbit holes. Each project is a story of what I dreamed, how I explored, and what I learned along the way.
             </p>
           </div>
           
           <div className="reveal">
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-12">
-              We partner with organizations ready to build with purpose—creating frameworks that are 
-              not only efficient but ethical, not only innovative but sustainable.
+              Some experiments ship exactly as imagined. Others hit walls and pivot. All of them teach me something new about what's possible when you design with intention.
             </p>
           </div>
           
@@ -71,7 +74,7 @@ const About = () => {
           {/* The Vibe Quote */}
           <div className="reveal">
             <blockquote className="font-body text-base italic text-sage">
-              "Designed with the precision of a system and the warmth of a home."
+              "Every tool is an experiment. Every experiment is a lesson."
             </blockquote>
           </div>
         </div>

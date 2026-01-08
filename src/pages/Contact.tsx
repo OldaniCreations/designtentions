@@ -5,11 +5,10 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const discussionTopics = [
-  { value: 'ai-ethics', label: 'AI Ethics' },
-  { value: 'climate-strategy', label: 'Climate Strategy' },
-  { value: 'system-problem', label: 'A System Problem' },
-  { value: 'partnership', label: 'Partnership Opportunity' },
-  { value: 'other', label: 'Something Else' },
+  { value: 'project-idea', label: 'A Project Idea' },
+  { value: 'collaboration', label: 'Collaboration Opportunity' },
+  { value: 'just-hi', label: 'Just Saying Hi' },
+  { value: 'other', label: 'Something Else Entirely' },
 ];
 
 const Contact = () => {
@@ -37,8 +36,8 @@ const Contact = () => {
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     toast({
-      title: "Message sent",
-      description: "We'll be in touch soon.",
+      title: "Message sent!",
+      description: "Thanks for reaching out. I'll get back to you soon.",
     });
     
     setFormData({ name: '', email: '', topic: '', message: '' });
@@ -53,13 +52,13 @@ const Contact = () => {
       <section className="pt-32 pb-16 grain-overlay">
         <div className="container mx-auto px-6 relative z-10">
           <span className="font-display text-xs tracking-[0.3em] uppercase text-sage mb-4 block">
-            Contact
+            Say Hello
           </span>
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
             Let's Connect
           </h1>
           <p className="font-body text-lg text-muted-foreground max-w-xl">
-            Whether you're exploring AI governance, climate strategy, or systemic challenges—we're here to listen and collaborate.
+            Got a tool idea? Want to collaborate on an experiment? Or just want to chat about the chaos of building things? I'd love to hear from you.
           </p>
         </div>
       </section>
@@ -106,7 +105,7 @@ const Contact = () => {
               {/* Topic */}
               <div>
                 <label htmlFor="topic" className="font-display text-sm text-foreground mb-2 block">
-                  I want to discuss...
+                  I want to chat about...
                 </label>
                 <select
                   id="topic"
@@ -116,7 +115,7 @@ const Contact = () => {
                   required
                   className="w-full px-0 py-3 font-body text-foreground bg-transparent border-b border-border focus:border-terracotta focus:outline-none transition-colors cursor-pointer appearance-none"
                 >
-                  <option value="" disabled>Select a topic</option>
+                  <option value="" disabled>Pick a topic</option>
                   {discussionTopics.map(topic => (
                     <option key={topic.value} value={topic.value} className="bg-background text-foreground">
                       {topic.label}
@@ -138,7 +137,7 @@ const Contact = () => {
                   required
                   rows={5}
                   className="w-full px-0 py-3 font-body text-foreground bg-transparent border-b border-border focus:border-terracotta focus:outline-none transition-colors resize-none"
-                  placeholder="Tell us about your challenge or idea..."
+                  placeholder="Tell me what's on your mind..."
                 />
               </div>
               
