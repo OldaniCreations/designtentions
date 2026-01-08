@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="w-full h-px bg-primary-foreground/10 mb-8" />
         
         {/* Copyright */}
-        <p className="font-body text-xs text-primary-foreground/40">
+        <p className="font-body text-xs text-primary-foreground/40 text-center">
           © {currentYear} Designtentions. All rights reserved.
         </p>
       </div>
