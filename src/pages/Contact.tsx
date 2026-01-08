@@ -1,4 +1,4 @@
-import { Linkedin, Calendar, Mail } from 'lucide-react';
+import { Linkedin, Calendar } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -26,17 +26,6 @@ const Contact = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="max-w-xl space-y-8">
-            <a 
-              href="mailto:hello@designtentions.com" 
-              className="flex items-center gap-4 p-6 border border-border hover:border-terracotta transition-colors group"
-            >
-              <Mail size={24} className="text-muted-foreground group-hover:text-terracotta transition-colors" />
-              <div>
-                <span className="font-display text-sm text-muted-foreground block">Email</span>
-                <span className="font-body text-foreground group-hover:text-terracotta transition-colors">hello@designtentions.com</span>
-              </div>
-            </a>
-            
             <a 
               href="https://www.linkedin.com/in/tristinoldani/" 
               target="_blank" 
