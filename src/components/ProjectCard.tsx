@@ -1,14 +1,6 @@
 import { Link } from 'react-router-dom';
-
-export interface Project {
-  id: string;
-  title: string;
-  category: 'experiments';
-  tag: string;
-  description: string;
-  image: string;
-  tools: string[];
-}
+import { ArrowUpRight } from 'lucide-react';
+import { Project } from '@/data/projects';
 
 interface ProjectCardProps {
   project: Project;
