@@ -37,8 +37,8 @@ const About = () => {
           </div>
 
           {/* Photo and Intro */}
-          <div className="reveal flex flex-col md:flex-row items-center gap-8 mb-12">
-            <div className="relative w-48 h-48 md:w-56 md:h-56 flex-shrink-0">
+          <div className="reveal flex flex-col md:flex-row items-center gap-10 md:gap-12 mb-16">
+            <div className="relative w-40 h-40 md:w-56 md:h-56 flex-shrink-0">
               <div className="absolute inset-0 bg-terracotta/20 translate-x-3 translate-y-3" />
               <img 
                 src={tristinPhoto} 
@@ -46,11 +46,12 @@ const About = () => {
                 className="relative w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
-            <div className="text-center md:text-left">
-              <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-4 text-balance">
+            <div className="text-center md:text-left flex-1">
+              <div className="w-8 h-0.5 bg-terracotta/60 mb-4 mx-auto md:mx-0" />
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground leading-tight mb-5 text-balance">
                 I'm a designer who can't stop tinkering.
               </h2>
-              <p className="font-body text-lg text-muted-foreground leading-relaxed">
+              <p className="font-body text-lg md:text-xl text-foreground/80 leading-relaxed max-w-md mx-auto md:mx-0">
                 When I see a problem, I don't just sketch solutions—I build them.
               </p>
             </div>
