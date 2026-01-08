@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProjectCard, { Project } from '@/components/ProjectCard';
 import propertyCompassImage from '@/assets/property-compass-hero.jpg';
+import rosterbossImage from '@/assets/rosterboss-hero.jpg';
 
 const allProjects: Project[] = [
   {
@@ -19,7 +20,7 @@ const allProjects: Project[] = [
     category: 'experiments',
     tag: 'Fantasy Football Sanity',
     description: 'Born from the chaos of managing three fantasy rosters at once. Sometimes the AI gets confused about positions too.',
-    image: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&auto=format&fit=crop&q=80',
+    image: rosterbossImage,
     tools: ['Cursor', 'Figma Make', 'MindStudio', 'ESPN API'],
   },
   {

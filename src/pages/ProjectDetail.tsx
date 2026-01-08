@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import propertyCompassImage from '@/assets/property-compass-hero.jpg';
+import rosterbossImage from '@/assets/rosterboss-hero.jpg';
 
 interface ProjectDetail {
   id: string;
@@ -38,7 +39,7 @@ Next iteration? Maybe I'll explore different approaches to the pricing problem. 
     id: 'rosterboss',
     title: 'RosterBoss',
     tag: 'Fantasy Football Sanity',
-    image: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=1200&auto=format&fit=crop&q=80',
+    image: rosterbossImage,
     dream: `Last year I was in three separate Fantasy Football leagues. Every game day, I wanted one view of all my rosters—live, updating, no switching between apps. Nobody offered this. So this year, I decided to build it myself.
 
 But I wanted more than just a dashboard. I wanted AI-powered insights: recommendations on who to start, who to bench, an edge over my competition.`,
