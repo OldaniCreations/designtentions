@@ -78,11 +78,11 @@ const ProjectDetail = () => {
       {/* Image */}
       <section className="pb-16">
         <div className="container mx-auto px-6">
-          <div className="aspect-[21/9] overflow-hidden bg-bone">
+          <div className="overflow-hidden bg-bone rounded-lg shadow-soft">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
