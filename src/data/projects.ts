@@ -1,5 +1,5 @@
 import propertyCompassImage from "@/assets/property-compass-hero.jpg";
-import rosterbossImage from "@/assets/rosterboss-hero.jpg";
+import rosterbossImage from "@/assets/rosterboss-hero.png";
 import forkastImage from "@/assets/forkast-hero.png";
 
 export interface Project {
