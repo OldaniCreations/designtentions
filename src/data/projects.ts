@@ -49,7 +49,7 @@ export const projects: Project[] = [
     description:
       "A custom property assessment engine that automates Central Oregon real estate due diligence using RAG-powered intelligence.",
     image: propertyCompassImage,
-    tools: ["Lovable", "RAG", "Deschutes County Data"],
+    tools: ["Lovable", "Firecrawl", "RAG", "Deschutes County Data"],
   },
   {
     id: "caresync",
@@ -59,7 +59,7 @@ export const projects: Project[] = [
     description:
       "A concept born from a healthcare UX course challenge: help people consolidate their scattered health records into one unified, accessible place.",
     image: caresyncImage,
-    tools: ["Lovable", "Figma", "UX Research"],
+    tools: ["Lovable", "Firecrawl", "Figma", "UX Research"],
   },
 ];
 
