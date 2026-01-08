@@ -1,5 +1,6 @@
 import propertyCompassImage from "@/assets/property-compass-hero.jpg";
 import rosterbossImage from "@/assets/rosterboss-hero.jpg";
+import forkastImage from "@/assets/forkast-hero.png";
 
 export interface Project {
   id: string;
@@ -26,7 +27,7 @@ export const projects: Project[] = [
     tag: "Meal Planning Gone Wild",
     description:
       "What started as a dream to price-compare groceries across multiple stores turned into a lesson in web scraping walls.",
-    image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=800&auto=format&fit=crop&q=80",
+    image: forkastImage,
     tools: ["Lovable", "Cursor", "Figma Make", "Spoonacular API"],
   },
   {
