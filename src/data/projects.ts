@@ -1,6 +1,7 @@
 import propertyCompassImage from "@/assets/property-compass-hero.png";
 import rosterbossImage from "@/assets/rosterboss-hero.png";
 import forkastImage from "@/assets/forkast-hero.png";
+import caresyncImage from "@/assets/caresync-hero.png";
 
 export interface Project {
   id: string;
@@ -50,6 +51,16 @@ export const projects: Project[] = [
     image: propertyCompassImage,
     tools: ["Lovable", "RAG", "Deschutes County Data"],
   },
+  {
+    id: "caresync",
+    title: "CareSync",
+    category: "experiments",
+    tag: "Healthcare UX Concept",
+    description:
+      "A concept born from a healthcare UX course challenge: help people consolidate their scattered health records into one unified, accessible place.",
+    image: caresyncImage,
+    tools: ["Lovable", "Figma", "UX Research"],
+  },
 ];
 
 export const projectDetails: Record<string, ProjectDetail> = {
@@ -95,5 +106,18 @@ The tool doesn't just find data, it assesses it. It interprets zoning nuances an
 
 This project is proof of how I approach problems: build a system that replaces noise with clarity.`,
     externalLink: "https://propertycompass.lovable.app/",
+  },
+  caresync: {
+    ...projects.find((p) => p.id === "caresync")!,
+    dream: `I took "Transition into UX for Healthcare" by Eric Shumake, a Principal Researcher at HXRlabs.com with 20+ years in ethical healthcare UX. Eric challenged us to create something that would help real people with their healthcare issues.
+
+At the same time, my mom was closing her clinic of 15 years to retire. Her biggest worry? Making sure her patients could access their health records. Through quick research—scanning communities and forums for healthcare pain points—I kept seeing the same theme: people struggling to get their records, let alone keep them in one place.`,
+    journey: `The research validated what my mom was experiencing from the provider side. People were frustrated, scattered records across multiple systems, and no unified view of their health history.
+
+I designed a concept that would allow people to pull all their records into one secure place. CareSync focuses on giving patients control: a dashboard to view lab results, medications, visits, and the ability to share records with new providers seamlessly.`,
+    lessons: `This project reinforced why healthcare UX matters. The problem isn't just technical—it's about trust, privacy, and giving people agency over their own health information.
+
+Building for healthcare taught me to think differently about user experience. Every design decision carries weight when it affects someone's ability to understand and manage their health.`,
+    externalLink: "https://care-sync-lyart.vercel.app/dashboard",
   },
 };
