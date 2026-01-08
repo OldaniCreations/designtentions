@@ -75,7 +75,7 @@ So I pivoted. Ripped out the pricing dreams and focused on what worked: a robust
     lessons: `Sometimes the dream has to shrink to ship. The price comparison feature hit walls that weren't worth climbing. But what survived is genuinely useful: a meal planning tool that generates shopping lists I can send to myself. Not the original vision, but a tool I actually use every week.
 
 Next iteration? Maybe I'll explore different approaches to the pricing problem. Or maybe I'll just accept that some dreams are meant to stay dreams.`,
-    externalLink: "https://forkast.lovable.app/",
+    externalLink: "https://forkastapp.lovable.app/",
   },
   rosterboss: {
     ...projects.find((p) => p.id === "rosterboss")!,
