@@ -1,4 +1,4 @@
-import propertyCompassImage from "@/assets/property-compass-hero.jpg";
+import propertyCompassImage from "@/assets/property-compass-hero.png";
 import rosterbossImage from "@/assets/rosterboss-hero.png";
 import forkastImage from "@/assets/forkast-hero.png";
 
